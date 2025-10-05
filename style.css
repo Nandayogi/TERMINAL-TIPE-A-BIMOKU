@@ -1,0 +1,272 @@
+
+.Jam-digital {
+  justify-content: right;
+  text-align: right;
+  margin-bottom: 1px;
+  font-size: 1.8em;
+}
+
+.tabel-keberangkatan {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2d2b2b;
+}
+
+.tabel-keberangkatan th, .tabel-keberangkatan td {
+  border: 1px solid #616c3e;
+  padding: 10px;
+  color: #e32121;
+  text-align: center;
+}
+
+.tabel-keberangkatan th {
+  background-color: #2b265c;
+  color: #f5f5f5;
+}
+
+.lewat {
+  background-color: #06b511;
+  color: #fcfcfc;
+  font-style: italic;
+  transition: all 0.2s ease;
+}
+
+
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.container-body {
+  background-image: url(../../../Downloads/gambar%20terminal.png);/* Path ke gambar */
+  background-size: cover;              /* Menyesuaikan ukuran gambar */
+  background-repeat: no-repeat;        /* Jangan ulang gambar */
+  background-position: center;); /* Path ke gambar */
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.container-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002147;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.img-left img,
+.img-right img {
+  vertical-align: middle;
+}
+
+.ul-navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 100px;
+  margin-top: 10px;
+}
+
+.li-navbar .a-navbar {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  background-color: #0055a5;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.li-navbar .a-navbar:hover {
+  background-color: #cc4400;
+}
+
+/* CONTENT */
+.container-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+  background-color: #fff;
+  border-top: 4px solid #0055a5;
+}
+
+.img-content {
+  max-width: 400px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.text-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.text-content p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+/* FOOTER */
+
+.h-footer .a-footer {
+  text-decoration: none;
+  color: #060000;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #0055a5;
+  padding: 10px 10px;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.h-footer .a-footer:hover {
+  background-color: #cc1100;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002147;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo-kemenhub img,
+.logo-hubdat img {
+  height: 60px;
+}
+
+.nav-menu {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.nav-menu a {
+   color: rgb(255, 254, 254);              /* Warna default */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+   border-radius: 2px;
+  display: inline-block;
+}
+.nav-menu a:hover {
+  color: rgb(255, 25, 0);  
+ } 
+.container-footer {
+display: flex;
+justify-content: center;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+margin-left: 50px;
+align-items: center;
+font-weight: bold;
+font-size: 15px;
+
+  
+}
+.a-footer:hover {
+color: #faf8f8;
+transition: background-color 0.3s ease, transform 0.3s ease;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+cursor: pointer;
+}
+/* Container untuk link */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Jarak antar tulisan */
+  align-items: center;
+}
+
+/* Gaya untuk masing-masing link */
+.menu-link {
+    width:500px ;
+    margin-top: 20px;
+    
+  background-color: #3b1cee; /* Biru tua */
+  font-weight: bold;
+  padding: 1px 5px;
+  border: 4px solid #000;
+  border-radius: 30px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 80px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu-link:hover {
+  color: rgb(189, 247, 30);
+}
+
+  /* Reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 40px;
+}
+
+/* Container flex horizontal */
+.bus-container {
+  display: flex;
+  justify-content: space-between; /* Bagong kiri, Damri tengah, Babadok kanan */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Box styling */
+.bus-box {
+  background-color: maroon;
+  color: white;
+  padding: 20px;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.bus-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.bus-box p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.bus-box a {
+  color: yellow;
+  text-decoration: none;
+}
+
+.bus-box a:hover {
+  text-decoration: underline;
+}
+  
+.bus-container1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  }
+

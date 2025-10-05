@@ -1,0 +1,164 @@
+<header class="header">
+  <div class="logo-kemenhub">
+    <img src="c:\Users\Lenovo\Downloads\kemenhub-removebg-preview.png" width="250" height="80" alt="Logo Kemenhub" />
+  </div>
+  <nav class="nav-menu">
+    <a href="index.html">HOME</a>
+    <a href="contact.html">CONTACT PERSON</a>
+  </nav>
+  <div class="logo-hubdat">
+    <img src="c:\Users\Lenovo\Downloads\foto_logo_bptd-removebg-preview.png" width="100" height="80" class="img-navbar" alt="Logo BPTD" />
+    <img src="c:\Users\Lenovo\Downloads\24654b01-be3f-4d0a-a627-5ebc28e2623d.png"  width="90" height="80" class="img-navbar" alt="Logo Tambahan" />
+</header>
+
+    <!-- NAVIGATION BAR SELESAI -->
+     <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Jadwal Keberangkatan Terminal BIMOKU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+<div class="jam-digital">
+  <div id="kupang">Kupang: --:--:--</div>
+  <div id="dili">Dili: --:--:--</div>
+  <div id="tanggal">Tanggal Indonesia: ---, -- --- ----</div>
+</div>
+<script>
+  function updateClock() {
+    const now = new Date();
+
+    function formatTime(zone) {
+      const formatter = new Intl.DateTimeFormat('id-ID', {
+        timeZone: zone,
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        hour12: true
+      });
+
+      const parts = formatter.formatToParts(now);
+      const timeParts = {};
+      parts.forEach(part => {
+        if (part.type !== 'literal') {
+          timeParts[part.type] = part.value;
+        }
+      });
+
+      return `${timeParts.hour.padStart(2, '0')}:${timeParts.minute.padStart(2, '0')}:${timeParts.second.padStart(2, '0')} ${timeParts.dayPeriod}`;
+    }
+
+    function formatDate(zone) {
+      const formatter = new Intl.DateTimeFormat('id-ID', {
+        timeZone: zone,
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+      });
+      return formatter.format(now);
+    }
+
+    document.getElementById('kupang').textContent = `Kupang: ${formatTime('Asia/Makassar')}`;
+    document.getElementById('dili').textContent = `Dili: ${formatTime('Asia/Dili')}`;
+    document.getElementById('tanggal').textContent = `Indonesia: ${formatDate('Asia/Makassar')}`;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Jadwal Keberangkatan Terminal BIMOKU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+  <table class="tabel-keberangkatan">
+    <thead>
+      <tr>
+        <th>WAKTU</th>
+        <th>JENIS BUS</th>
+        <th>NAMA BUS</th>
+        <th>NOMOR BUS</th>
+        <th>TUJUAN</th>
+        <th>STATUS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>06.30</td>
+        <td><img src="c:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2025-07-14 085933.png" width="100", height="30"></td>
+        <td>BAGONG</td>
+        <td>DH 1313 EB</td>
+        <td>DILI</td>
+        <td class="status">MENUNGGU</td>
+      </tr>
+      <tr>
+        <td>06.30</td>
+        <td><img src="c:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2025-07-14 111351.png"width="50%" height="30"></td>
+        <td>DAMRI</td>
+        <td>DH 1314 EB</td>
+        <td>ATAMBUA</td>
+        <td class="status">MENUNGGU</td>
+      </tr>
+      <tr>
+        <td>06.30</td>
+        <td><img src="c:\Users\Lenovo\Downloads\WhatsApp Image 2025-10-02 at 12.22.33_3bdadf0c.jpg" width="45%" height="35""</td>
+        <td>BABADOK</td>
+        <td>DH 1315 EB</td>
+        <td>ATAMBUA</td>
+        <td class="status">MENUNGGU</td>
+      </tr>
+       <tr>
+        <td>10.10</td>
+        <Td> <img src="c:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2025-07-15 110639.png"width="50%" height="30"</Td>
+        <td>SINAR JAYA</td>
+        <td>DH 1534 EB</td>
+        <td>KEFAMENANU</td>
+        <td class="status">MENUNGGU</td>
+      </tr>
+         <tr>
+        <td>10.10</td>
+        <Td> <img src="c:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2025-07-15 110639.png"width="50%" height="30"</Td>
+        <td>SINAR JAYA</td>
+        <td>DH 1534 EB</td>
+        <td>KEFAMENANU</td>
+        <td class="status">MENUNGGU</td>
+      </tr>
+         <tr>
+        <td>10.10</td>
+        <Td> <img src="c:\Users\Lenovo\Downloads\oardefault-removebg-preview.png"width="50%" height="30"></Td>
+        <td>CARDINAL</td>
+        <td>DH 1537 EB</td>
+        <td>KEFAMENANU</td>
+        <td class="status">MENUNGGU</td>
+      </tr>
+         <tr>
+        <td>10.29</td>
+        <Td> <img src="c:\Users\Lenovo\Downloads\oardefault-removebg-preview.png"width="50%" height="30"></Td>
+        <td>SYALOM</td>
+        <td>DH 1544 EB</td>
+        <td>KEFAMENANU</td>
+        <td class="status">MENUNGGU</td>
+      </tr>
+         <tr>
+        <td>10.30</td>
+        <Td> <img src="c:\Users\Lenovo\Downloads\oardefault-removebg-preview.png"width="50%" height="30"></Td>
+        <td>KANGEN</td>
+        <td>DH 1574 EB</td>
+        <td>KEFAMENANU</td>
+        <td class="status">MENUNGGU</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
